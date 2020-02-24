@@ -1,1 +1,1 @@
-#GitHub
+Aprendendo a programar, fazendo uma calculadora da equação de 2° grau
