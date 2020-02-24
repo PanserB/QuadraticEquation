@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
+
 using namespace std;
+
 
 int main (){
     setlocale(LC_ALL, "Portuguese");
@@ -31,7 +33,18 @@ int main (){
 	}	else{
         cout<< "As raizes são positivas "<<endl;
 	}
+	if(Delt < 0){
+        return 0;
+	}else{
+        Raiz_pos = (-B+sqrt(Delt))/2*A;
+        Raiz_neg = (-B-sqrt(Delt))/2/A;
 
+	if(Delt == 0){
+        cout<<"As raizes são:"<<Raiz_pos<<"\n"<<endl;
+    }else{
+        cout<<"As raízes são:X"<<Raiz_pos<<" e X'"<<Raiz_neg<<"\n"<<endl;
+	}
+	}
 	system ("pause");
 	return 0;
 }
